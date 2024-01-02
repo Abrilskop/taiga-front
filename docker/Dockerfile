@@ -4,13 +4,22 @@
 #
 # Copyright (c) 2021-present Kaleidos Ventures SL
 
+# Herencia de contruccion de img a partir de la img base nginx
 FROM nginx:1.23-alpine
+
+# agregar el metadato para el soporte 
 LABEL maintainer="support@taiga.io"
 
+# copiar
 COPY docker/default.conf /etc/nginx/conf.d/default.conf
 COPY docker/conf.json.template /
 COPY docker/config_env_subst.sh /docker-entrypoint.d/30_config_env_subst.sh
 
+# Ejecucion de comandos
+
+# - 'set -e' detiene la ejecución si algún comando devuelve un código de salida no exitoso.
+# - 'set -u' produce un error si se intenta usar una variable no definida.
+# - 'set -x' habilita la salida detallada de comandos para propósitos de depuración.
 RUN set -eux; \
     apk update; \
     apk add --no-cache --virtual .build-deps \
@@ -21,6 +30,7 @@ RUN set -eux; \
     wget https://github.com/kaleidos-ventures/taiga-front-dist/archive/6.7.1.zip -O source.zip; \
     unzip source.zip; \
     mv /taiga-front-dist-6.7.1 /taiga; \
+    ####
     mv /conf.json.template taiga/dist/; \
     chmod +x /docker-entrypoint.d/30_config_env_subst.sh; \
     # Install taiga-front contribs

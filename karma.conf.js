@@ -1,28 +1,26 @@
 /*
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ * Este formulario de código fuente está sujeto a los términos de la Licencia Pública de Mozilla,
+ * v. 2.0. Si una copia del MPL no fue distribuida con este archivo,
+ * puedes obtener una en http://mozilla.org/MPL/2.0/.
  *
  * Copyright (c) 2021-present Kaleidos Ventures SL
  */
 
-// Karma configuration
-// Generated on Wed Apr 15 2015 09:44:14 GMT+0200 (CEST)
+// Configuración de Karma
+// a---
 
-// this is needed by theme.service.spec
+// Esto es necesario para theme.service.spec
 module.exports = function(config) {
   var configuration = {
 
-    // base path that will be used to resolve all patterns (eg. files, exclude)
+    // Ruta base que se utilizará para resolver todos los patrones (por ejemplo, archivos, excluidos)
     basePath: '',
 
-
-    // frameworks to use
-    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
+    // Marcos (frameworks) a utilizar
+    // marcos disponibles: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha', 'chai', 'chai-as-promised', 'sinon-chai'],
 
-
-    // list of files / patterns to load in the browser
+    // Lista de archivos / patrones para cargar en el navegador
     files: [
       'karma.app.conf.js',
       'dist/**/js/libs.js',
@@ -34,57 +32,49 @@ module.exports = function(config) {
       'app/**/*spec.coffee'
     ],
 
-
-    // list of files to exclude
+    // Lista de archivos a excluir
     exclude: [
     ],
 
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    // Preprocesar archivos antes de servirlos al navegador
+    // preprocesadores disponibles: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       '**/*.spec.coffee': ['coffee'],
       'dist/js/app.js': ['sourcemap']
     },
 
     coffeePreprocessor: {
-      // options passed to the coffee compiler
+      // Opciones pasadas al compilador de coffee
       options: {
         bare: true,
         sourceMap: true
       },
-      // transforming the filenames
+      // Transformar los nombres de archivo
       transformPath: function(path) {
         return path.replace(/\.coffee$/, '.js');
       }
     },
 
-
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
+    // Reportero de resultados de pruebas a utilizar
+    // valores posibles: 'dots', 'progress'
+    // reporteros disponibles: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['progress'],
 
-
-    // web server port
+    // Puerto del servidor web
     port: 9876,
 
-
-    // enable / disable colors in the output (reporters and logs)
+    // Habilitar o deshabilitar colores en la salida (reporteros y registros)
     colors: true,
 
-
-    // level of logging
-    // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+    // Nivel de registro
+    // valores posibles: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
     logLevel: config.LOG_INFO,
 
-
-    // enable / disable watching file and executing tests whenever any file changes
+    // Habilitar / deshabilitar observación de archivos y ejecución de pruebas cada vez que algún archivo cambia
     autoWatch: true,
 
-
-    // start these browsers
-    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+    // Iniciar estos navegadores
+    // lanzadores de navegadores disponibles: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessCI'],
     customLaunchers: {
         ChromeHeadlessCI: {
@@ -99,8 +89,8 @@ module.exports = function(config) {
       '/base/dist/js/maps/': 'http://localhost:9001/js/maps/'
     },
 
-    // Continuous Integration mode
-    // if true, Karma captures browsers, runs the tests and exits
+    // Modo de Integración Continua
+    // si es true, Karma captura los navegadores, ejecuta las pruebas y sale
     singleRun: false
   };
 

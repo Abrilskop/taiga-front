@@ -8,7 +8,7 @@
     "debug": false,
     "debugInfo": false,
     "defaultLanguage": "en",
-    "themes": ["taiga"],
+    "themes": ["taiga, Digiplanner"],
     "defaultTheme": "taiga",
     "defaultLoginEnabled": true,
     "publicRegisterEnabled": ${PUBLIC_REGISTER_ENABLED},

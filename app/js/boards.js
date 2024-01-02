@@ -6,14 +6,20 @@
  * Copyright (c) 2021-present Kaleidos Ventures SL
  */
 
+// Función principal para inicializar el tablero Kanban
 function initBoard() {
+    // Función de devolución de llamada para eventos
     var eventsCallback = function() {};
+    // Objeto para almacenar los observadores de estado del Kanban
     var kanbanStatusObservers = {};
 
+    // Devuelve un objeto con métodos para gestionar el tablero Kanban
     return {
+        // Método para establecer la función de devolución de llamada para eventos
         events: function(cb) {
             eventsCallback = cb;
         },
+        // Método para añadir una tarjeta al tablero Kanban
         addCard: function(card, statusId, swimlaneId) {
             if (swimlaneId) {
                 kanbanStatusObservers[swimlaneId][statusId].observe(card);

@@ -1,0 +1,1648 @@
+/root/proyectos/taiga-docker/taiga-front
+├── AUTHORS.rst
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── DCOLICENSE
+├── LICENSE
+├── README.md
+├── app
+│   ├── coffee
+│   │   ├── app.coffee
+│   │   ├── classes.coffee
+│   │   ├── modules
+│   │   │   ├── admin
+│   │   │   │   ├── lightboxes.coffee
+│   │   │   │   ├── memberships.coffee
+│   │   │   │   ├── nav.coffee
+│   │   │   │   ├── project-profile.coffee
+│   │   │   │   ├── project-values.coffee
+│   │   │   │   ├── roles.coffee
+│   │   │   │   └── third-parties.coffee
+│   │   │   ├── admin.coffee
+│   │   │   ├── angular-translate-handler-log.coffee
+│   │   │   ├── auth.coffee
+│   │   │   ├── backlog
+│   │   │   │   ├── lightboxes.coffee
+│   │   │   │   ├── main.coffee
+│   │   │   │   ├── sortable.coffee
+│   │   │   │   └── sprints.coffee
+│   │   │   ├── backlog.coffee
+│   │   │   ├── base
+│   │   │   │   ├── bind.coffee
+│   │   │   │   ├── conf.coffee
+│   │   │   │   ├── contrib.coffee
+│   │   │   │   ├── filters.coffee
+│   │   │   │   ├── http.coffee
+│   │   │   │   ├── load-element.coffee
+│   │   │   │   ├── location.coffee
+│   │   │   │   ├── model.coffee
+│   │   │   │   ├── navurls.coffee
+│   │   │   │   ├── repository.coffee
+│   │   │   │   ├── storage.coffee
+│   │   │   │   └── urls.coffee
+│   │   │   ├── base.coffee
+│   │   │   ├── common
+│   │   │   │   ├── analytics.coffee
+│   │   │   │   ├── bind-scope.coffee
+│   │   │   │   ├── compile-html.directive.coffee
+│   │   │   │   ├── components.coffee
+│   │   │   │   ├── confirm.coffee
+│   │   │   │   ├── custom-field-values.coffee
+│   │   │   │   ├── emojis.coffee
+│   │   │   │   ├── estimation.coffee
+│   │   │   │   ├── filters.coffee
+│   │   │   │   ├── lightboxes.coffee
+│   │   │   │   ├── loaded.coffee
+│   │   │   │   ├── loader.coffee
+│   │   │   │   ├── loading.coffee
+│   │   │   │   ├── popovers.coffee
+│   │   │   │   ├── raven-logger.coffee
+│   │   │   │   ├── sections.coffee
+│   │   │   │   ├── tag-manager.coffee
+│   │   │   │   ├── tags.coffee
+│   │   │   │   ├── userpilot.coffee
+│   │   │   │   └── userpilot.service.spec.coffee
+│   │   │   ├── common.coffee
+│   │   │   ├── controllerMixins.coffee
+│   │   │   ├── detail.coffee
+│   │   │   ├── epics
+│   │   │   │   └── detail.coffee
+│   │   │   ├── epics.coffee
+│   │   │   ├── events.coffee
+│   │   │   ├── feedback.coffee
+│   │   │   ├── integrations.coffee
+│   │   │   ├── issues
+│   │   │   │   ├── detail.coffee
+│   │   │   │   ├── lightboxes.coffee
+│   │   │   │   └── list.coffee
+│   │   │   ├── issues.coffee
+│   │   │   ├── kanban
+│   │   │   │   ├── kanban-usertories.coffee
+│   │   │   │   ├── main.coffee
+│   │   │   │   └── sortable.coffee
+│   │   │   ├── kanban.coffee
+│   │   │   ├── plugins.coffee
+│   │   │   ├── projects
+│   │   │   │   └── lightboxes.coffee
+│   │   │   ├── projects.coffee
+│   │   │   ├── related-tasks.coffee
+│   │   │   ├── resources
+│   │   │   │   ├── custom-attributes-values.coffee
+│   │   │   │   ├── custom-attributes.coffee
+│   │   │   │   ├── epics.coffee
+│   │   │   │   ├── history.coffee
+│   │   │   │   ├── invitations.coffee
+│   │   │   │   ├── issues.coffee
+│   │   │   │   ├── kanban.coffee
+│   │   │   │   ├── locales.coffee
+│   │   │   │   ├── mdrender.coffee
+│   │   │   │   ├── memberships.coffee
+│   │   │   │   ├── modules.coffee
+│   │   │   │   ├── notify-policies.coffee
+│   │   │   │   ├── projects.coffee
+│   │   │   │   ├── roles.coffee
+│   │   │   │   ├── search.coffee
+│   │   │   │   ├── sprints.coffee
+│   │   │   │   ├── swimlanes.coffee
+│   │   │   │   ├── tasks.coffee
+│   │   │   │   ├── user-project-settings.coffee
+│   │   │   │   ├── user-settings.coffee
+│   │   │   │   ├── users.coffee
+│   │   │   │   ├── userstories.coffee
+│   │   │   │   ├── webhooklogs.coffee
+│   │   │   │   ├── webhooks.coffee
+│   │   │   │   └── wiki.coffee
+│   │   │   ├── resources.coffee
+│   │   │   ├── search.coffee
+│   │   │   ├── taskboard
+│   │   │   │   ├── charts.coffee
+│   │   │   │   ├── lightboxes.coffee
+│   │   │   │   ├── main.coffee
+│   │   │   │   ├── sortable.coffee
+│   │   │   │   ├── taskboard-issues.coffee
+│   │   │   │   └── taskboard-tasks.coffee
+│   │   │   ├── taskboard.coffee
+│   │   │   ├── tasks
+│   │   │   │   └── detail.coffee
+│   │   │   ├── tasks.coffee
+│   │   │   ├── team
+│   │   │   │   └── main.coffee
+│   │   │   ├── team.coffee
+│   │   │   ├── user-settings
+│   │   │   │   ├── change-password.coffee
+│   │   │   │   ├── lightboxes.coffee
+│   │   │   │   ├── live-notifications.coffee
+│   │   │   │   ├── main.coffee
+│   │   │   │   ├── nav.coffee
+│   │   │   │   ├── notifications.coffee
+│   │   │   │   ├── user-project-settings.coffee
+│   │   │   │   └── web-notifications.coffee
+│   │   │   ├── user-settings.coffee
+│   │   │   ├── userstories
+│   │   │   │   └── detail.coffee
+│   │   │   ├── userstories.coffee
+│   │   │   ├── wiki
+│   │   │   │   ├── main.coffee
+│   │   │   │   ├── nav.coffee
+│   │   │   │   └── pages-list.coffee
+│   │   │   └── wiki.coffee
+│   │   └── utils.coffee
+│   ├── fonts
+│   │   ├── Ubuntu-Medium.ttf
+│   │   └── Ubuntu-Regular.ttf
+│   ├── images
+│   │   ├── attachment-gallery.png
+│   │   ├── avatar-role.png
+│   │   ├── bg.png
+│   │   ├── discover.png
+│   │   ├── empty
+│   │   │   ├── empty_contact.png
+│   │   │   ├── empty_des.png
+│   │   │   ├── empty_field.png
+│   │   │   ├── empty_like.png
+│   │   │   ├── empty_mex.png
+│   │   │   ├── empty_moon.png
+│   │   │   ├── empty_sprint.png
+│   │   │   ├── empty_tex.png
+│   │   │   ├── empty_upvote.png
+│   │   │   └── empty_watch.png
+│   │   ├── epics-empty.png
+│   │   ├── favicon.png
+│   │   ├── import-logos
+│   │   │   ├── asana.png
+│   │   │   ├── github.png
+│   │   │   ├── jira.png
+│   │   │   └── trello.png
+│   │   ├── invitation_bg.jpg
+│   │   ├── logo-color.png
+│   │   ├── logo.png
+│   │   ├── looking-for-people.png
+│   │   ├── markitup
+│   │   │   ├── bg-container.png
+│   │   │   ├── bg-editor-bbcode.png
+│   │   │   ├── bg-editor-dotclear.png
+│   │   │   ├── bg-editor-html.png
+│   │   │   ├── bg-editor-json.png
+│   │   │   ├── bg-editor-markdown.png
+│   │   │   ├── bg-editor-textile.png
+│   │   │   ├── bg-editor-wiki.png
+│   │   │   ├── bg-editor-xml.png
+│   │   │   ├── bg-editor.png
+│   │   │   ├── body.png
+│   │   │   ├── bold.png
+│   │   │   ├── clean.png
+│   │   │   ├── code.png
+│   │   │   ├── h1.png
+│   │   │   ├── h2.png
+│   │   │   ├── h3.png
+│   │   │   ├── h4.png
+│   │   │   ├── h5.png
+│   │   │   ├── h6.png
+│   │   │   ├── handle.png
+│   │   │   ├── help.png
+│   │   │   ├── image.png
+│   │   │   ├── italic.png
+│   │   │   ├── jaysalvat.png
+│   │   │   ├── link.png
+│   │   │   ├── list-bullet.png
+│   │   │   ├── list-numeric.png
+│   │   │   ├── markitup.png
+│   │   │   ├── menu.png
+│   │   │   ├── picture.png
+│   │   │   ├── preview.png
+│   │   │   ├── preview_ico.png
+│   │   │   ├── quotes.png
+│   │   │   ├── stroke.png
+│   │   │   └── submenu.png
+│   │   ├── menu-vert.png
+│   │   ├── menu.png
+│   │   ├── monster-fight.png
+│   │   ├── notification-decoration.png
+│   │   ├── project-logos
+│   │   │   ├── project-logo-01.png
+│   │   │   ├── project-logo-02.png
+│   │   │   ├── project-logo-03.png
+│   │   │   ├── project-logo-04.png
+│   │   │   └── project-logo-05.png
+│   │   ├── quote.png
+│   │   ├── tribe-logo.png
+│   │   ├── unnamed.png
+│   │   ├── user-avatars
+│   │   │   ├── user-avatar-01.png
+│   │   │   ├── user-avatar-02.png
+│   │   │   ├── user-avatar-03.png
+│   │   │   ├── user-avatar-04.png
+│   │   │   └── user-avatar-05.png
+│   │   └── user-noimage.png
+│   ├── index.jade
+│   ├── js
+│   │   ├── angular-sanitize.js
+│   │   ├── boards.js
+│   │   ├── dragula-drag-multiple.js
+│   │   ├── markdown-it-lazy-headers.js
+│   │   ├── medium-mention.js
+│   │   ├── murmurhash3_gc.js
+│   │   ├── sha1-custom.js
+│   │   └── tg-repeat.js
+│   ├── locales
+│   │   └── taiga
+│   │       ├── locale-ar.json
+│   │       ├── locale-ca.json
+│   │       ├── locale-da.json
+│   │       ├── locale-de.json
+│   │       ├── locale-en.json
+│   │       ├── locale-es.json
+│   │       ├── locale-eu.json
+│   │       ├── locale-fa.json
+│   │       ├── locale-fi.json
+│   │       ├── locale-fr.json
+│   │       ├── locale-he.json
+│   │       ├── locale-hu.json
+│   │       ├── locale-id.json
+│   │       ├── locale-it.json
+│   │       ├── locale-ja.json
+│   │       ├── locale-ko.json
+│   │       ├── locale-lv.json
+│   │       ├── locale-nb.json
+│   │       ├── locale-nl.json
+│   │       ├── locale-pl.json
+│   │       ├── locale-pt-br.json
+│   │       ├── locale-ru.json
+│   │       ├── locale-sr.json
+│   │       ├── locale-sv.json
+│   │       ├── locale-tr.json
+│   │       ├── locale-uk.json
+│   │       ├── locale-vi.json
+│   │       ├── locale-zh-hans.json
+│   │       └── locale-zh-hant.json
+│   ├── modules
+│   │   ├── attachments
+│   │   │   ├── attachment-gallery.scss
+│   │   │   ├── attachment-list.scss
+│   │   │   └── attachments.scss
+│   │   ├── components
+│   │   │   ├── animated-counter
+│   │   │   │   ├── animated-counter.directive.coffee
+│   │   │   │   └── animated-counter.directive.scss
+│   │   │   ├── assigned-inline
+│   │   │   │   ├── assigned-to-inline.directive.coffee
+│   │   │   │   ├── assigned-to-inline.jade
+│   │   │   │   ├── assigned-users-inline.directive.coffee
+│   │   │   │   └── assigned-users-inline.jade
+│   │   │   ├── attachment
+│   │   │   │   ├── attachment-gallery.directive.coffee
+│   │   │   │   ├── attachment-gallery.jade
+│   │   │   │   ├── attachment.controller.coffee
+│   │   │   │   ├── attachment.controller.spec.coffee
+│   │   │   │   ├── attachment.directive.coffee
+│   │   │   │   └── attachment.jade
+│   │   │   ├── attachment-link
+│   │   │   │   └── attachment-link.directive.coffee
+│   │   │   ├── attachments-drop
+│   │   │   │   └── attachments-drop.directive.coffee
+│   │   │   ├── attachments-full
+│   │   │   │   ├── attachments-full.controller.coffee
+│   │   │   │   ├── attachments-full.controller.spec.coffee
+│   │   │   │   ├── attachments-full.directive.coffee
+│   │   │   │   ├── attachments-full.jade
+│   │   │   │   ├── attachments-full.service.coffee
+│   │   │   │   └── attachments-full.service.spec.coffee
+│   │   │   ├── attachments-preview
+│   │   │   │   ├── attachments-preview.controller.coffee
+│   │   │   │   ├── attachments-preview.controller.spec.coffee
+│   │   │   │   ├── attachments-preview.directive.coffee
+│   │   │   │   ├── attachments-preview.jade
+│   │   │   │   └── attachments-preview.service.coffee
+│   │   │   ├── attachments-simple
+│   │   │   │   ├── attachments-simple.controller.coffee
+│   │   │   │   ├── attachments-simple.controller.spec.coffee
+│   │   │   │   ├── attachments-simple.directive.coffee
+│   │   │   │   └── attachments-simple.jade
+│   │   │   ├── attachments-sortable
+│   │   │   │   └── attachments-sortable.directive.coffee
+│   │   │   ├── auto-select
+│   │   │   │   └── auto-select.directive.coffee
+│   │   │   ├── avatar
+│   │   │   │   └── avatar.directive.coffee
+│   │   │   ├── belong-to-epics
+│   │   │   │   ├── belong-to-epics-pill.jade
+│   │   │   │   ├── belong-to-epics-text.jade
+│   │   │   │   ├── belong-to-epics.directive.coffee
+│   │   │   │   └── belong-to-epics.scss
+│   │   │   ├── bind-wysiwyg-html.coffee
+│   │   │   ├── board-zoom
+│   │   │   │   ├── board-zoom.directive.coffee
+│   │   │   │   ├── board-zoom.jade
+│   │   │   │   └── board-zoom.scss
+│   │   │   ├── card
+│   │   │   │   ├── card-templates
+│   │   │   │   │   ├── card-actions.jade
+│   │   │   │   │   ├── card-assigned-to.jade
+│   │   │   │   │   ├── card-data.jade
+│   │   │   │   │   ├── card-epics.jade
+│   │   │   │   │   ├── card-tags.jade
+│   │   │   │   │   ├── card-tasks.jade
+│   │   │   │   │   ├── card-title.jade
+│   │   │   │   │   └── card-unfold.jade
+│   │   │   │   ├── card.controller.coffee
+│   │   │   │   ├── card.controller.spec.coffee
+│   │   │   │   ├── card.directive.coffee
+│   │   │   │   ├── card.jade
+│   │   │   │   └── card.scss
+│   │   │   ├── card-slideshow
+│   │   │   │   ├── card-slideshow.controller.coffee
+│   │   │   │   ├── card-slideshow.directive.coffee
+│   │   │   │   └── card-slideshow.jade
+│   │   │   ├── click-input-file.directive.coffee
+│   │   │   ├── color-selector
+│   │   │   │   ├── color-selector.controller.coffee
+│   │   │   │   ├── color-selector.controller.spec.coffee
+│   │   │   │   ├── color-selector.directive.coffee
+│   │   │   │   ├── color-selector.jade
+│   │   │   │   └── color-selector.scss
+│   │   │   ├── components.module.coffee
+│   │   │   ├── detail
+│   │   │   │   ├── header
+│   │   │   │   │   ├── detail-header.controller.coffee
+│   │   │   │   │   ├── detail-header.controller.spec.coffee
+│   │   │   │   │   ├── detail-header.directive.coffee
+│   │   │   │   │   ├── detail-header.jade
+│   │   │   │   │   └── detail-header.scss
+│   │   │   │   └── nav
+│   │   │   │       ├── detail-nav.controller.coffee
+│   │   │   │       ├── detail-nav.controller.spec.coffee
+│   │   │   │       ├── detail-nav.directive.coffee
+│   │   │   │       └── detail-nav.jade
+│   │   │   ├── due-date
+│   │   │   │   ├── due-date-button.jade
+│   │   │   │   ├── due-date-controller.coffee
+│   │   │   │   ├── due-date-controller.spec.coffee
+│   │   │   │   ├── due-date-icon.jade
+│   │   │   │   ├── due-date-popover.directive.coffee
+│   │   │   │   ├── due-date-popover.jade
+│   │   │   │   ├── due-date.directive.coffee
+│   │   │   │   ├── due-date.scss
+│   │   │   │   └── due-date.service.coffee
+│   │   │   ├── file-change
+│   │   │   │   └── file-change.directive.coffee
+│   │   │   ├── filter
+│   │   │   │   ├── filter-remote.service.coffee
+│   │   │   │   ├── filter-slide-down.directive.coffee
+│   │   │   │   ├── filter.controller.coffee
+│   │   │   │   ├── filter.controller.spec.coffee
+│   │   │   │   ├── filter.directive.coffee
+│   │   │   │   ├── filter.jade
+│   │   │   │   └── filter.scss
+│   │   │   ├── input-search
+│   │   │   │   ├── input-search.component.coffee
+│   │   │   │   └── input-search.component.scss
+│   │   │   ├── issues-table
+│   │   │   │   ├── issues
+│   │   │   │   │   ├── issues-options.scss
+│   │   │   │   │   └── issues-table.scss
+│   │   │   │   ├── issues-table.controller.coffee
+│   │   │   │   ├── issues-table.directive.coffee
+│   │   │   │   └── issues-table.jade
+│   │   │   ├── joy-ride
+│   │   │   │   ├── joy-ride.directive.coffee
+│   │   │   │   ├── joy-ride.service.coffee
+│   │   │   │   └── joy-ride.service.spec.coffee
+│   │   │   ├── kanban-board-zoom
+│   │   │   │   └── kanban-board-zoom.directive.coffee
+│   │   │   ├── lb-select-user
+│   │   │   │   ├── lb-select-user.directive.coffee
+│   │   │   │   ├── lb-select-user.jade
+│   │   │   │   └── lb-select-user.scss
+│   │   │   ├── live-announcement
+│   │   │   │   ├── live-announcement.directive.coffee
+│   │   │   │   ├── live-announcement.jade
+│   │   │   │   ├── live-announcement.scss
+│   │   │   │   └── live-announcement.service.coffee
+│   │   │   ├── move-to-sprint
+│   │   │   │   ├── move-to-sprint-lb
+│   │   │   │   │   ├── move-to-sprint-lb.controller.coffee
+│   │   │   │   │   ├── move-to-sprint-lb.directive.coffee
+│   │   │   │   │   ├── move-to-sprint-lb.jade
+│   │   │   │   │   └── move-to-sprint-lb.scss
+│   │   │   │   ├── move-to-sprint.controller.coffee
+│   │   │   │   ├── move-to-sprint.controller.spec.coffee
+│   │   │   │   ├── move-to-sprint.directive.coffee
+│   │   │   │   ├── move-to-sprint.jade
+│   │   │   │   └── move-to-sprint.scss
+│   │   │   ├── project-logo-big-src
+│   │   │   │   └── project-logo-big-src.directive.coffee
+│   │   │   ├── project-logo-small-src
+│   │   │   │   └── project-logo-small-src.directive.coffee
+│   │   │   ├── project-menu
+│   │   │   │   ├── project-menu.controller.coffee
+│   │   │   │   ├── project-menu.controller.spec.coffee
+│   │   │   │   ├── project-menu.directive.coffee
+│   │   │   │   └── project-menu.jade
+│   │   │   ├── promote-to-us
+│   │   │   │   ├── promote-to-us.directive.coffee
+│   │   │   │   └── promote-to-us.jade
+│   │   │   ├── search-list
+│   │   │   │   ├── search-list-issue-choice.jade
+│   │   │   │   ├── search-list-sprint-choice.jade
+│   │   │   │   ├── search-list.directive.coffee
+│   │   │   │   ├── search-list.jade
+│   │   │   │   └── search-list.scss
+│   │   │   ├── swimlane-selector
+│   │   │   │   ├── swimlane-selector.directive.coffee
+│   │   │   │   ├── swimlane-selector.jade
+│   │   │   │   └── swimlane-selector.scss
+│   │   │   ├── tags
+│   │   │   │   ├── components
+│   │   │   │   │   ├── add-tag-button.jade
+│   │   │   │   │   ├── add-tag-input.jade
+│   │   │   │   │   └── add-tag.scss
+│   │   │   │   ├── tag
+│   │   │   │   │   ├── tag.directive.coffee
+│   │   │   │   │   ├── tag.jade
+│   │   │   │   │   └── tag.scss
+│   │   │   │   ├── tag-dropdown
+│   │   │   │   │   ├── tag-dropdown.directive.coffee
+│   │   │   │   │   └── tag-dropdown.jade
+│   │   │   │   ├── tag-line-common
+│   │   │   │   │   ├── tag-line-common.controller.coffee
+│   │   │   │   │   ├── tag-line-common.controller.spec.coffee
+│   │   │   │   │   ├── tag-line-common.directive.coffee
+│   │   │   │   │   └── tag-line-common.jade
+│   │   │   │   ├── tag-line-detail
+│   │   │   │   │   ├── tag-line-detail.controller.coffee
+│   │   │   │   │   ├── tag-line-detail.controller.spec.coffee
+│   │   │   │   │   ├── tag-line-detail.directive.coffee
+│   │   │   │   │   └── tag-line-detail.jade
+│   │   │   │   ├── tag-line.scss
+│   │   │   │   └── tag-line.service.coffee
+│   │   │   ├── taskboard-zoom
+│   │   │   │   └── taskboard-zoom.directive.coffee
+│   │   │   ├── tasks-sortable
+│   │   │   │   └── tasks-sortable.directive.coffee
+│   │   │   ├── terms-of-service-and-privacy-policy-notice
+│   │   │   │   ├── terms-of-service-and-privacy-policy-notice.directive.coffee
+│   │   │   │   └── terms-of-service-and-privacy-policy-notice.jade
+│   │   │   ├── ticket-assigned
+│   │   │   │   ├── assigned-to.directive.coffee
+│   │   │   │   ├── assigned-to.jade
+│   │   │   │   ├── assigned-users.directive.coffee
+│   │   │   │   └── assigned-users.jade
+│   │   │   ├── ticket-watchers
+│   │   │   │   ├── ticket-watchers.controller.coffee
+│   │   │   │   ├── ticket-watchers.controller.spec.coffee
+│   │   │   │   ├── ticket-watchers.directive.coffee
+│   │   │   │   └── ticket-watchers.jade
+│   │   │   ├── tips
+│   │   │   │   ├── tip.jade
+│   │   │   │   ├── tips.directive.coffee
+│   │   │   │   └── tips.scss
+│   │   │   ├── tribe-button
+│   │   │   │   ├── tribe-button.directive.coffee
+│   │   │   │   ├── tribe-button.jade
+│   │   │   │   ├── tribe-linked.directive.coffee
+│   │   │   │   ├── tribe-linked.jade
+│   │   │   │   └── tribe-linked.scss
+│   │   │   ├── vote-button
+│   │   │   │   ├── vote-button.controller.coffee
+│   │   │   │   ├── vote-button.controller.spec.coffee
+│   │   │   │   ├── vote-button.directive.coffee
+│   │   │   │   ├── vote-button.jade
+│   │   │   │   └── vote-button.scss
+│   │   │   ├── wip-limit-selector
+│   │   │   │   ├── wip-limit-selector.controller.coffee
+│   │   │   │   ├── wip-limit-selector.directive.coffee
+│   │   │   │   ├── wip-limit-selector.jade
+│   │   │   │   └── wip-limit-selector.scss
+│   │   │   └── wysiwyg
+│   │   │       ├── comment-edit-wysiwyg.directive.coffee
+│   │   │       ├── comment-wysiwyg.directive.coffee
+│   │   │       ├── custom-field-edit-wysiwyg.directive.coffee
+│   │   │       ├── item-wysiwyg.directive.coffee
+│   │   │       ├── wysiwyg.directive.coffee
+│   │   │       ├── wysiwyg.scss
+│   │   │       └── wysiwyg.service.coffee
+│   │   ├── discover
+│   │   │   ├── components
+│   │   │   │   ├── discover-home-order-by
+│   │   │   │   │   ├── discover-home-order-by.controller.coffee
+│   │   │   │   │   ├── discover-home-order-by.controller.spec.coffee
+│   │   │   │   │   ├── discover-home-order-by.directive.coffee
+│   │   │   │   │   └── discover-home-order-by.jade
+│   │   │   │   ├── discover-search-bar
+│   │   │   │   │   ├── discover-search-bar.controller.coffee
+│   │   │   │   │   ├── discover-search-bar.controller.spec.coffee
+│   │   │   │   │   ├── discover-search-bar.directive.coffee
+│   │   │   │   │   ├── discover-search-bar.jade
+│   │   │   │   │   └── discover-search-bar.scss
+│   │   │   │   ├── discover-search-list-header
+│   │   │   │   │   ├── discover-search-list-header.controller.coffee
+│   │   │   │   │   ├── discover-search-list-header.controller.spec.coffee
+│   │   │   │   │   ├── discover-search-list-header.directive.coffee
+│   │   │   │   │   ├── discover-search-list-header.jade
+│   │   │   │   │   └── discover-search-list-header.scss
+│   │   │   │   ├── featured-projects
+│   │   │   │   │   ├── featured-projects.controller.coffee
+│   │   │   │   │   ├── featured-projects.directive.coffee
+│   │   │   │   │   ├── featured-projects.jade
+│   │   │   │   │   └── featured-projects.scss
+│   │   │   │   ├── highlighted
+│   │   │   │   │   ├── highlighted.directive.coffee
+│   │   │   │   │   ├── highlighted.jade
+│   │   │   │   │   └── highlighted.scss
+│   │   │   │   ├── most-active
+│   │   │   │   │   ├── most-active.controller.coffee
+│   │   │   │   │   ├── most-active.controller.spec.coffee
+│   │   │   │   │   ├── most-active.directive.coffee
+│   │   │   │   │   └── most-active.jade
+│   │   │   │   └── most-liked
+│   │   │   │       ├── most-liked.controller.coffee
+│   │   │   │       ├── most-liked.controller.spec.coffee
+│   │   │   │       ├── most-liked.directive.coffee
+│   │   │   │       └── most-liked.jade
+│   │   │   ├── discover-home
+│   │   │   │   ├── discover-home.controller.coffee
+│   │   │   │   ├── discover-home.controller.spec.coffee
+│   │   │   │   └── discover-home.jade
+│   │   │   ├── discover-search
+│   │   │   │   ├── discover-search.controller.coffee
+│   │   │   │   ├── discover-search.controller.spec.coffee
+│   │   │   │   ├── discover-search.directive.coffee
+│   │   │   │   ├── discover-search.jade
+│   │   │   │   └── discover-search.scss
+│   │   │   ├── discover.module.coffee
+│   │   │   └── services
+│   │   │       ├── discover-projects.service.coffee
+│   │   │       └── discover-projects.service.spec.coffee
+│   │   ├── epics
+│   │   │   ├── create-epic
+│   │   │   │   ├── create-epic.controller.coffee
+│   │   │   │   ├── create-epic.controller.spec.coffee
+│   │   │   │   ├── create-epic.directive.coffee
+│   │   │   │   ├── create-epic.jade
+│   │   │   │   └── create-epic.scss
+│   │   │   ├── dashboard
+│   │   │   │   ├── epic-row
+│   │   │   │   │   ├── epic-row.controller.coffee
+│   │   │   │   │   ├── epic-row.controller.spec.coffee
+│   │   │   │   │   ├── epic-row.directive.coffee
+│   │   │   │   │   ├── epic-row.jade
+│   │   │   │   │   └── epic-row.scss
+│   │   │   │   ├── epics-dashboard.controller.coffee
+│   │   │   │   ├── epics-dashboard.controller.spec.coffee
+│   │   │   │   ├── epics-dashboard.jade
+│   │   │   │   ├── epics-dashboard.scss
+│   │   │   │   ├── epics-sortable
+│   │   │   │   │   └── epics-sortable.directive.coffee
+│   │   │   │   ├── epics-table
+│   │   │   │   │   ├── epics-table.controller.coffee
+│   │   │   │   │   ├── epics-table.controller.spec.coffee
+│   │   │   │   │   ├── epics-table.directive.coffee
+│   │   │   │   │   ├── epics-table.jade
+│   │   │   │   │   └── epics-table.scss
+│   │   │   │   └── story-row
+│   │   │   │       ├── story-row.controller.coffee
+│   │   │   │       ├── story-row.controller.spec.coffee
+│   │   │   │       ├── story-row.directive.coffee
+│   │   │   │       ├── story-row.jade
+│   │   │   │       └── story-row.scss
+│   │   │   ├── epics.service.coffee
+│   │   │   ├── epics.service.spec.coffee
+│   │   │   └── related-userstories
+│   │   │       ├── related-userstories-controller.coffee
+│   │   │       ├── related-userstories-create
+│   │   │       │   ├── related-userstories-create.controller.coffee
+│   │   │       │   ├── related-userstories-create.controller.spec.coffee
+│   │   │       │   ├── related-userstories-create.directive.coffee
+│   │   │       │   ├── related-userstories-create.jade
+│   │   │       │   └── related-userstories-create.scss
+│   │   │       ├── related-userstories-sortable
+│   │   │       │   └── related-userstories-sortable.directive.coffee
+│   │   │       ├── related-userstories.controller.spec.coffee
+│   │   │       ├── related-userstories.directive.coffee
+│   │   │       ├── related-userstories.jade
+│   │   │       ├── related-userstories.scss
+│   │   │       └── related-userstory-row
+│   │   │           ├── related-userstory-row.controller.coffee
+│   │   │           ├── related-userstory-row.controller.spec.coffee
+│   │   │           ├── related-userstory-row.directive.coffee
+│   │   │           ├── related-userstory-row.jade
+│   │   │           └── related-userstory-row.scss
+│   │   ├── external-apps
+│   │   │   ├── external-app.controller.coffee
+│   │   │   ├── external-app.controller.spec.coffee
+│   │   │   ├── external-app.jade
+│   │   │   ├── external-app.scss
+│   │   │   ├── external-app.service.coffee
+│   │   │   ├── external-app.service.spec.coffee
+│   │   │   └── external-apps.module.coffee
+│   │   ├── feedback
+│   │   │   ├── feedback.service.coffee
+│   │   │   └── feedback.service.spec.coffee
+│   │   ├── history
+│   │   │   ├── activity
+│   │   │   │   ├── activity.service.coffee
+│   │   │   │   └── activity.service.spec.coffee
+│   │   │   ├── comments
+│   │   │   │   ├── comment.controller.coffee
+│   │   │   │   ├── comment.controller.spec.coffee
+│   │   │   │   ├── comment.directive.coffee
+│   │   │   │   ├── comment.jade
+│   │   │   │   ├── comment.scss
+│   │   │   │   ├── comments.controller.coffee
+│   │   │   │   ├── comments.controller.spec.coffee
+│   │   │   │   ├── comments.directive.coffee
+│   │   │   │   └── comments.jade
+│   │   │   ├── history
+│   │   │   │   ├── history-diff.controller.coffee
+│   │   │   │   ├── history-diff.controller.spec.coffee
+│   │   │   │   ├── history-diff.directive.coffee
+│   │   │   │   ├── history-diff.jade
+│   │   │   │   ├── history-templates
+│   │   │   │   │   ├── blocked.jade
+│   │   │   │   │   ├── client-requirement.jade
+│   │   │   │   │   ├── history-assigned-users.jade
+│   │   │   │   │   ├── history-assigned.jade
+│   │   │   │   │   ├── history-attachments.jade
+│   │   │   │   │   ├── history-color.jade
+│   │   │   │   │   ├── history-custom-attributes.jade
+│   │   │   │   │   ├── history-description.jade
+│   │   │   │   │   ├── history-due-date.jade
+│   │   │   │   │   ├── history-milestone.jade
+│   │   │   │   │   ├── history-points.jade
+│   │   │   │   │   ├── history-priority.jade
+│   │   │   │   │   ├── history-promoted.jade
+│   │   │   │   │   ├── history-severity.jade
+│   │   │   │   │   ├── history-status.jade
+│   │   │   │   │   ├── history-subject.jade
+│   │   │   │   │   ├── history-tags.jade
+│   │   │   │   │   ├── history-templates.scss
+│   │   │   │   │   ├── history-type.jade
+│   │   │   │   │   └── team-requirement.jade
+│   │   │   │   ├── history.directive.coffee
+│   │   │   │   ├── history.jade
+│   │   │   │   └── history.scss
+│   │   │   ├── history-lightbox
+│   │   │   │   ├── comment-history-lightbox.controller.coffee
+│   │   │   │   ├── comment-history-lightbox.controller.spec.coffee
+│   │   │   │   ├── comment-history-lightbox.directive.coffee
+│   │   │   │   ├── comment-history-lightbox.jade
+│   │   │   │   ├── comment-history-lightbox.scss
+│   │   │   │   ├── history-entry.directive.coffee
+│   │   │   │   ├── history-entry.jade
+│   │   │   │   └── history-entry.scss
+│   │   │   ├── history-tabs
+│   │   │   │   ├── history-tabs.directive.coffee
+│   │   │   │   ├── history-tabs.jade
+│   │   │   │   └── history-tabs.scss
+│   │   │   ├── history.controller.coffee
+│   │   │   ├── history.controller.spec.coffee
+│   │   │   ├── history.directive.coffee
+│   │   │   ├── history.jade
+│   │   │   └── history.module.coffee
+│   │   ├── home
+│   │   │   ├── duties
+│   │   │   │   ├── duty.directive.coffee
+│   │   │   │   ├── duty.directive.spec.coffee
+│   │   │   │   ├── duty.jade
+│   │   │   │   └── duty.scss
+│   │   │   ├── home-controller.spec.coffee
+│   │   │   ├── home.controller.coffee
+│   │   │   ├── home.jade
+│   │   │   ├── home.module.coffee
+│   │   │   ├── home.scss
+│   │   │   ├── home.service.coffee
+│   │   │   ├── home.service.spec.coffee
+│   │   │   ├── projects
+│   │   │   │   ├── home-project-list-directive.spec.coffee
+│   │   │   │   ├── home-project-list.directive.coffee
+│   │   │   │   ├── home-project-list.jade
+│   │   │   │   └── home-project-list.scss
+│   │   │   └── working-on
+│   │   │       ├── empty.jade
+│   │   │       ├── empty.scss
+│   │   │       ├── working-on.controller.coffee
+│   │   │       ├── working-on.controller.spec.coffee
+│   │   │       ├── working-on.directive.coffee
+│   │   │       └── working-on.jade
+│   │   ├── invite-members
+│   │   │   ├── invite-members-form
+│   │   │   │   ├── invite-members-form.controller.coffee
+│   │   │   │   ├── invite-members-form.controller.spec.coffee
+│   │   │   │   ├── invite-members-form.directive.coffee
+│   │   │   │   ├── invite-members-form.jade
+│   │   │   │   └── invite-members-form.scss
+│   │   │   ├── lightbox-add-members.controller.coffee
+│   │   │   ├── lightbox-add-members.controller.spec.coffee
+│   │   │   ├── lightbox-add-members.directive.coffee
+│   │   │   ├── lightbox-add-members.jade
+│   │   │   ├── lightbox-add-members.scss
+│   │   │   └── suggest-add-members
+│   │   │       ├── suggest-add-members.controller.coffee
+│   │   │       ├── suggest-add-members.controller.spec.coffee
+│   │   │       ├── suggest-add-members.directive.coffee
+│   │   │       ├── suggest-add-members.jade
+│   │   │       └── suggest-add-members.scss
+│   │   ├── navigation-bar
+│   │   │   ├── dropdown-notifications
+│   │   │   │   ├── dropdown-notifications.directive.coffee
+│   │   │   │   └── dropdown-notifications.jade
+│   │   │   ├── dropdown-project-list
+│   │   │   │   ├── dropdown-project-list.directive.coffee
+│   │   │   │   ├── dropdown-project-list.directive.spec.coffee
+│   │   │   │   ├── dropdown-project-list.jade
+│   │   │   │   └── dropdown-project-list.scss
+│   │   │   ├── dropdown-user
+│   │   │   │   ├── dropdown-user.directive.coffee
+│   │   │   │   ├── dropdown-user.directive.spec.coffee
+│   │   │   │   └── dropdown-user.jade
+│   │   │   ├── navigation-bar.directive.coffee
+│   │   │   ├── navigation-bar.directive.spec.coffee
+│   │   │   ├── navigation-bar.jade
+│   │   │   ├── navigation-bar.module.coffee
+│   │   │   ├── navigation-bar.scss
+│   │   │   └── navigation-bar.service.coffee
+│   │   ├── notifications
+│   │   │   ├── notifications-list
+│   │   │   │   ├── notifications-list.directive.coffee
+│   │   │   │   └── notifications-list.jade
+│   │   │   ├── notifications.controller.coffee
+│   │   │   ├── notifications.jade
+│   │   │   ├── notifications.module.coffee
+│   │   │   ├── notifications.scss
+│   │   │   └── notifications.service.coffee
+│   │   ├── profile
+│   │   │   ├── includes
+│   │   │   │   └── profile-sidebar.jade
+│   │   │   ├── profile-bar
+│   │   │   │   ├── profile-bar.controller.coffee
+│   │   │   │   ├── profile-bar.controller.spec.coffee
+│   │   │   │   ├── profile-bar.directive.coffee
+│   │   │   │   └── profile-bar.jade
+│   │   │   ├── profile-contacts
+│   │   │   │   ├── profile-contacts.controller.coffee
+│   │   │   │   ├── profile-contacts.controller.spec.coffee
+│   │   │   │   ├── profile-contacts.directive.coffee
+│   │   │   │   └── profile-contacts.jade
+│   │   │   ├── profile-favs
+│   │   │   │   ├── items
+│   │   │   │   │   ├── items.directive.coffee
+│   │   │   │   │   ├── project.jade
+│   │   │   │   │   └── ticket.jade
+│   │   │   │   ├── profile-favs.controller.coffee
+│   │   │   │   ├── profile-favs.controller.spec.coffee
+│   │   │   │   ├── profile-favs.directive.coffee
+│   │   │   │   ├── profile-favs.jade
+│   │   │   │   └── profile-favs.scss
+│   │   │   ├── profile-hints
+│   │   │   │   ├── profile-hints.controller.coffee
+│   │   │   │   ├── profile-hints.controller.spec.coffee
+│   │   │   │   ├── profile-hints.directive.coffee
+│   │   │   │   └── profile-hints.jade
+│   │   │   ├── profile-projects
+│   │   │   │   ├── profile-projects.controller.coffee
+│   │   │   │   ├── profile-projects.controller.spec.coffee
+│   │   │   │   ├── profile-projects.directive.coffee
+│   │   │   │   └── profile-projects.jade
+│   │   │   ├── profile-tab
+│   │   │   │   ├── profile-tab.directive.coffee
+│   │   │   │   └── profile-tab.jade
+│   │   │   ├── profile-tabs
+│   │   │   │   ├── profile-tabs.controller.coffee
+│   │   │   │   ├── profile-tabs.controller.spec.coffee
+│   │   │   │   ├── profile-tabs.directive.coffee
+│   │   │   │   └── profile-tabs.jade
+│   │   │   ├── profile.controller.coffee
+│   │   │   ├── profile.controller.spec.coffee
+│   │   │   ├── profile.jade
+│   │   │   ├── profile.module.coffee
+│   │   │   ├── profile.scss
+│   │   │   └── styles
+│   │   │       ├── profile-bar.scss
+│   │   │       ├── profile-contacts.scss
+│   │   │       ├── profile-content-tabs.scss
+│   │   │       └── profile-sidebar.scss
+│   │   ├── projects
+│   │   │   ├── components
+│   │   │   │   ├── blocked-project-explanation.directive.coffee
+│   │   │   │   ├── contact-project-button
+│   │   │   │   │   ├── contact-project-button.controller.coffee
+│   │   │   │   │   ├── contact-project-button.controller.spec.coffee
+│   │   │   │   │   ├── contact-project-button.directive.coffee
+│   │   │   │   │   ├── contact-project-button.jade
+│   │   │   │   │   └── contact-project-button.scss
+│   │   │   │   ├── lb-contact-project
+│   │   │   │   │   ├── lb-contact-project.controller.coffee
+│   │   │   │   │   ├── lb-contact-project.controller.spec.coffee
+│   │   │   │   │   ├── lb-contact-project.directive.coffee
+│   │   │   │   │   ├── lb-contact-project.jade
+│   │   │   │   │   └── lb-contact-project.scss
+│   │   │   │   ├── like-project-button
+│   │   │   │   │   ├── like-project-button.controller.coffee
+│   │   │   │   │   ├── like-project-button.controller.spec.coffee
+│   │   │   │   │   ├── like-project-button.directive.coffee
+│   │   │   │   │   ├── like-project-button.jade
+│   │   │   │   │   ├── like-project-button.service.coffee
+│   │   │   │   │   └── like-project-button.service.spec.coffee
+│   │   │   │   ├── sort-projects.directive.coffee
+│   │   │   │   └── watch-project-button
+│   │   │   │       ├── watch-project-button.controller.coffee
+│   │   │   │       ├── watch-project-button.controller.spec.coffee
+│   │   │   │       ├── watch-project-button.directive.coffee
+│   │   │   │       ├── watch-project-button.jade
+│   │   │   │       ├── watch-project-button.service.coffee
+│   │   │   │       └── watch-project-button.service.spec.coffee
+│   │   │   ├── create
+│   │   │   │   ├── asana-import
+│   │   │   │   │   ├── asana-import-project-form
+│   │   │   │   │   │   ├── asana-import-project-form.controller.coffee
+│   │   │   │   │   │   ├── asana-import-project-form.directive.coffee
+│   │   │   │   │   │   ├── asana-import-project-form.jade
+│   │   │   │   │   │   └── asana-import-project-form.scss
+│   │   │   │   │   ├── asana-import.controller.coffee
+│   │   │   │   │   ├── asana-import.controller.spec.coffee
+│   │   │   │   │   ├── asana-import.directive.coffee
+│   │   │   │   │   ├── asana-import.jade
+│   │   │   │   │   ├── asana-import.service.coffee
+│   │   │   │   │   └── asana-import.service.spec.coffee
+│   │   │   │   ├── create-project-form
+│   │   │   │   │   ├── create-project-form.controller.coffee
+│   │   │   │   │   ├── create-project-form.controller.spec.coffee
+│   │   │   │   │   ├── create-project-form.directive.coffee
+│   │   │   │   │   └── create-project-form.jade
+│   │   │   │   ├── create-project-members-restrictions
+│   │   │   │   │   ├── create-project-members-restrictions.directive.coffee
+│   │   │   │   │   └── create-project-members-restrictions.jade
+│   │   │   │   ├── create-project-restrictions
+│   │   │   │   │   ├── create-project-restrictions.directive.coffee
+│   │   │   │   │   └── create-project-restrictions.jade
+│   │   │   │   ├── create-project.controller.coffee
+│   │   │   │   ├── create-project.controller.spec.coffee
+│   │   │   │   ├── create-project.jade
+│   │   │   │   ├── create-project.scss
+│   │   │   │   ├── duplicate
+│   │   │   │   │   ├── duplicate-project.controller.coffee
+│   │   │   │   │   ├── duplicate-project.controller.spec.coffee
+│   │   │   │   │   ├── duplicate-project.directive.coffee
+│   │   │   │   │   ├── duplicate-project.jade
+│   │   │   │   │   └── duplicate-project.scss
+│   │   │   │   ├── github-import
+│   │   │   │   │   ├── github-import-project-form
+│   │   │   │   │   │   ├── github-import-project-form.controller.coffee
+│   │   │   │   │   │   ├── github-import-project-form.directive.coffee
+│   │   │   │   │   │   ├── github-import-project-form.jade
+│   │   │   │   │   │   └── github-import-project-form.scss
+│   │   │   │   │   ├── github-import.controller.coffee
+│   │   │   │   │   ├── github-import.controller.spec.coffee
+│   │   │   │   │   ├── github-import.directive.coffee
+│   │   │   │   │   ├── github-import.jade
+│   │   │   │   │   ├── github-import.service.coffee
+│   │   │   │   │   └── github-import.service.spec.coffee
+│   │   │   │   ├── import
+│   │   │   │   │   ├── import-header.jade
+│   │   │   │   │   ├── import-project-error-lb.directive.coffee
+│   │   │   │   │   ├── import-project-error-lb.jade
+│   │   │   │   │   ├── import-project.controller.coffee
+│   │   │   │   │   ├── import-project.controller.spec.coffee
+│   │   │   │   │   ├── import-project.directive.coffee
+│   │   │   │   │   ├── import-project.jade
+│   │   │   │   │   ├── import-project.scss
+│   │   │   │   │   ├── import-project.service.coffee
+│   │   │   │   │   └── import-project.service.spec.coffee
+│   │   │   │   ├── import-project-form-common
+│   │   │   │   │   ├── actions.jade
+│   │   │   │   │   ├── description.jade
+│   │   │   │   │   ├── links.jade
+│   │   │   │   │   ├── name.jade
+│   │   │   │   │   └── project-privacy.jade
+│   │   │   │   ├── import-project-members
+│   │   │   │   │   ├── import-project-members.controller.coffee
+│   │   │   │   │   ├── import-project-members.controller.spec.coffee
+│   │   │   │   │   ├── import-project-members.directive.coffee
+│   │   │   │   │   ├── import-project-members.jade
+│   │   │   │   │   └── import-project-members.scss
+│   │   │   │   ├── import-project-selector
+│   │   │   │   │   ├── import-project-selector.controller.coffee
+│   │   │   │   │   ├── import-project-selector.directive.coffee
+│   │   │   │   │   ├── import-project-selector.jade
+│   │   │   │   │   └── import-project-selector.scss
+│   │   │   │   ├── import-taiga
+│   │   │   │   │   ├── import-taiga.controller.coffee
+│   │   │   │   │   ├── import-taiga.directive.coffee
+│   │   │   │   │   └── import-taiga.jade
+│   │   │   │   ├── invite-members
+│   │   │   │   │   ├── invite-members.controller.coffee
+│   │   │   │   │   ├── invite-members.directive.coffee
+│   │   │   │   │   ├── invite-members.jade
+│   │   │   │   │   ├── invite-members.scss
+│   │   │   │   │   └── single-member
+│   │   │   │   │       ├── single-member.directive.coffee
+│   │   │   │   │       ├── single-member.jade
+│   │   │   │   │       └── single-member.scss
+│   │   │   │   ├── jira-import
+│   │   │   │   │   ├── jira-import-project-form
+│   │   │   │   │   │   ├── jira-import-project-form.controller.coffee
+│   │   │   │   │   │   ├── jira-import-project-form.directive.coffee
+│   │   │   │   │   │   ├── jira-import-project-form.jade
+│   │   │   │   │   │   └── jira-import-project-form.scss
+│   │   │   │   │   ├── jira-import.controller.coffee
+│   │   │   │   │   ├── jira-import.controller.spec.coffee
+│   │   │   │   │   ├── jira-import.directive.coffee
+│   │   │   │   │   ├── jira-import.jade
+│   │   │   │   │   ├── jira-import.service.coffee
+│   │   │   │   │   └── jira-import.service.spec.coffee
+│   │   │   │   ├── newsletter-email-lightbox
+│   │   │   │   │   ├── newsletter-email-lightbox.directive.coffee
+│   │   │   │   │   ├── newsletter-email-lightbox.jade
+│   │   │   │   │   └── newsletter-email-lightbox.scss
+│   │   │   │   ├── select-import-user-lightbox
+│   │   │   │   │   ├── select-import-user-lightbox.controller.coffee
+│   │   │   │   │   ├── select-import-user-lightbox.directive.coffee
+│   │   │   │   │   ├── select-import-user-lightbox.jade
+│   │   │   │   │   └── select-import-user-lightbox.scss
+│   │   │   │   ├── trello-import
+│   │   │   │   │   ├── trello-import-project-form
+│   │   │   │   │   │   ├── trello-import-project-form.controller.coffee
+│   │   │   │   │   │   ├── trello-import-project-form.directive.coffee
+│   │   │   │   │   │   ├── trello-import-project-form.jade
+│   │   │   │   │   │   └── trello-import-project-form.scss
+│   │   │   │   │   ├── trello-import.controller.coffee
+│   │   │   │   │   ├── trello-import.controller.spec.coffee
+│   │   │   │   │   ├── trello-import.directive.coffee
+│   │   │   │   │   ├── trello-import.jade
+│   │   │   │   │   ├── trello-import.service.coffee
+│   │   │   │   │   └── trello-import.service.spec.coffee
+│   │   │   │   └── warning-user-import-lightbox
+│   │   │   │       ├── warning-user-import-lightbox.directive.coffee
+│   │   │   │       ├── warning-user-import-lightbox.jade
+│   │   │   │       └── warning-user-import-lightbox.scss
+│   │   │   ├── listing
+│   │   │   │   ├── projects-listing.controller.coffee
+│   │   │   │   ├── projects-listing.controller.spec.coffee
+│   │   │   │   ├── projects-listing.jade
+│   │   │   │   └── styles
+│   │   │   │       ├── profile-projects.scss
+│   │   │   │       └── project-list.scss
+│   │   │   ├── project
+│   │   │   │   ├── blocked-project-explanation.jade
+│   │   │   │   ├── blocked-project.jade
+│   │   │   │   ├── blocked-project.scss
+│   │   │   │   ├── project-router.controller.coffee
+│   │   │   │   ├── project.controller.coffee
+│   │   │   │   ├── project.controller.spec.coffee
+│   │   │   │   └── project.jade
+│   │   │   ├── projects.module.coffee
+│   │   │   ├── projects.service.coffee
+│   │   │   ├── projects.service.spec.coffee
+│   │   │   └── transfer
+│   │   │       ├── cant-own-project-explanation.directive.coffee
+│   │   │       ├── cant-own-project-explanation.jade
+│   │   │       ├── transfer-page.jade
+│   │   │       ├── transfer-project.controller.coffee
+│   │   │       ├── transfer-project.controller.spec.coffee
+│   │   │       ├── transfer-project.directive.coffee
+│   │   │       ├── transfer-project.jade
+│   │   │       └── transfer-project.scss
+│   │   ├── resources
+│   │   │   ├── attachments-resource.service.coffee
+│   │   │   ├── epics-resource.service.coffee
+│   │   │   ├── external-apps-resource.service.coffee
+│   │   │   ├── history-resource.service.coffee
+│   │   │   ├── importers-resource.service.coffee
+│   │   │   ├── issues-resource.service.coffee
+│   │   │   ├── onpremise-resource.service.coffee
+│   │   │   ├── projects-resource.service.coffee
+│   │   │   ├── resources.coffee
+│   │   │   ├── resources.module.coffee
+│   │   │   ├── stats-resource.service.coffee
+│   │   │   ├── tasks-resource.service.coffee
+│   │   │   ├── user-resource.service.coffee
+│   │   │   ├── users-resource.service.coffee
+│   │   │   └── userstories-resource.service.coffee
+│   │   ├── services
+│   │   │   ├── app-meta.service.coffee
+│   │   │   ├── app-meta.service.spec.coffee
+│   │   │   ├── attachments.service.coffee
+│   │   │   ├── attachments.service.spec.coffee
+│   │   │   ├── avatar.service.coffee
+│   │   │   ├── check-permissions.service.coffee
+│   │   │   ├── check-permissions.service.spec.coffee
+│   │   │   ├── current-user.service.coffee
+│   │   │   ├── current-user.service.spec.coffee
+│   │   │   ├── error-handling.service.coffee
+│   │   │   ├── lightbox-factory.service.coffee
+│   │   │   ├── lightbox-factory.service.spec.coffee
+│   │   │   ├── paginate-response.service.coffee
+│   │   │   ├── paginate-response.service.spec.coffee
+│   │   │   ├── project-logo.service.coffee
+│   │   │   ├── project-logo.service.spec.coffee
+│   │   │   ├── project.service.coffee
+│   │   │   ├── project.service.spec.coffee
+│   │   │   ├── theme.service.coffee
+│   │   │   ├── theme.service.spec.coffee
+│   │   │   ├── user-activity.service.coffee
+│   │   │   ├── user-activity.service.spec.coffee
+│   │   │   ├── user-list.service.coffee
+│   │   │   ├── user.service.coffee
+│   │   │   ├── user.service.spec.coffee
+│   │   │   ├── xhrError.service.coffee
+│   │   │   └── xhrError.service.spec.coffee
+│   │   ├── user-timeline
+│   │   │   ├── user-timeline
+│   │   │   │   ├── user-timeline.controller.coffee
+│   │   │   │   ├── user-timeline.controller.spec.coffee
+│   │   │   │   ├── user-timeline.directive.coffee
+│   │   │   │   ├── user-timeline.jade
+│   │   │   │   ├── user-timeline.scss
+│   │   │   │   ├── user-timeline.service.coffee
+│   │   │   │   └── user-timeline.service.spec.coffee
+│   │   │   ├── user-timeline-attachment
+│   │   │   │   ├── user-timeline-attachment-image.jade
+│   │   │   │   ├── user-timeline-attachment.directive.coffee
+│   │   │   │   ├── user-timeline-attachment.directive.spec.coffee
+│   │   │   │   └── user-timeline-attachment.jade
+│   │   │   ├── user-timeline-item
+│   │   │   │   ├── user-timeline-item-title.service.coffee
+│   │   │   │   ├── user-timeline-item-title.service.spec.coffee
+│   │   │   │   ├── user-timeline-item-type.service.coffee
+│   │   │   │   ├── user-timeline-item-type.service.spec.coffee
+│   │   │   │   ├── user-timeline-item.directive.coffee
+│   │   │   │   └── user-timeline-item.jade
+│   │   │   ├── user-timeline-pagination-sequence
+│   │   │   │   ├── user-timeline-pagination-sequence.service.coffee
+│   │   │   │   └── user-timeline-pagination-sequence.service.spec.coffee
+│   │   │   └── user-timeline.module.coffee
+│   │   ├── utils
+│   │   │   ├── isolate-click.directive.coffee
+│   │   │   └── utils.module.coffee
+│   │   └── wiki
+│   │       └── history
+│   │           ├── history-templates
+│   │           │   └── history-attachments.jade
+│   │           ├── wiki-history-diff.directive.coffee
+│   │           ├── wiki-history-diff.jade
+│   │           ├── wiki-history-entry.directive.coffee
+│   │           ├── wiki-history-entry.jade
+│   │           ├── wiki-history.controller.coffee
+│   │           ├── wiki-history.controller.spec.coffee
+│   │           ├── wiki-history.directive.coffee
+│   │           ├── wiki-history.jade
+│   │           ├── wiki-history.module.coffee
+│   │           └── wiki-history.scss
+│   ├── partials
+│   │   ├── admin
+│   │   │   ├── admin-membership-paginator.jade
+│   │   │   ├── admin-memberships-row-checkbox.jade
+│   │   │   ├── admin-memberships.jade
+│   │   │   ├── admin-project-change-owner.jade
+│   │   │   ├── admin-project-default-values.jade
+│   │   │   ├── admin-project-export.jade
+│   │   │   ├── admin-project-modules.jade
+│   │   │   ├── admin-project-profile.jade
+│   │   │   ├── admin-project-reports.jade
+│   │   │   ├── admin-project-request-ownership.jade
+│   │   │   ├── admin-project-restrictions.jade
+│   │   │   ├── admin-project-values-custom-fields.jade
+│   │   │   ├── admin-project-values-due-dates.jade
+│   │   │   ├── admin-project-values-kanban-power-ups.jade
+│   │   │   ├── admin-project-values-points.jade
+│   │   │   ├── admin-project-values-priorities.jade
+│   │   │   ├── admin-project-values-severities.jade
+│   │   │   ├── admin-project-values-status.jade
+│   │   │   ├── admin-project-values-tags.jade
+│   │   │   ├── admin-project-values-types.jade
+│   │   │   ├── admin-roles.jade
+│   │   │   ├── admin-third-parties-bitbucket.jade
+│   │   │   ├── admin-third-parties-github.jade
+│   │   │   ├── admin-third-parties-gitlab.jade
+│   │   │   ├── admin-third-parties-gogs.jade
+│   │   │   ├── admin-third-parties-webhooks.jade
+│   │   │   ├── lightbox-add-members.jade
+│   │   │   ├── memberships-row-avatar.jade
+│   │   │   ├── memberships-warning-message.jade
+│   │   │   ├── no-more-memberships-explanation.jade
+│   │   │   └── project-csv.jade
+│   │   ├── auth
+│   │   │   ├── change-password-from-recovery.jade
+│   │   │   ├── forgot-password.jade
+│   │   │   ├── invitation.jade
+│   │   │   ├── login-text.jade
+│   │   │   ├── login.jade
+│   │   │   └── register.jade
+│   │   ├── backlog
+│   │   │   ├── backlog.jade
+│   │   │   ├── progress-bar.jade
+│   │   │   ├── sprint-header.jade
+│   │   │   ├── sprint.jade
+│   │   │   ├── us-edit-popover.jade
+│   │   │   └── us-role-points-popover.jade
+│   │   ├── common
+│   │   │   ├── components
+│   │   │   │   ├── add-button.jade
+│   │   │   │   ├── block-button.jade
+│   │   │   │   ├── created-by.jade
+│   │   │   │   ├── delete-button.jade
+│   │   │   │   ├── editable-description-msg-edit-mode.jade
+│   │   │   │   ├── editable-description-msg-read-mode.jade
+│   │   │   │   ├── editable-subject.jade
+│   │   │   │   ├── kanban-placeholder.jade
+│   │   │   │   ├── level.jade
+│   │   │   │   ├── list-item-assigned-to-avatar.jade
+│   │   │   │   ├── main-title.jade
+│   │   │   │   ├── progress-bar.jade
+│   │   │   │   ├── status-button.jade
+│   │   │   │   ├── status-display.jade
+│   │   │   │   ├── taskboard-placeholder.jade
+│   │   │   │   ├── user-display.jade
+│   │   │   │   └── wysiwyg-toolbar.jade
+│   │   │   ├── estimation
+│   │   │   │   ├── us-estimation-points-per-role.jade
+│   │   │   │   ├── us-estimation-points.jade
+│   │   │   │   ├── us-estimation-total.jade
+│   │   │   │   └── us-points-roles-popover.jade
+│   │   │   ├── lightbox
+│   │   │   │   ├── lightbox-block.jade
+│   │   │   │   ├── lightbox-blocking-message-input.jade
+│   │   │   │   ├── lightbox-change-owner.jade
+│   │   │   │   ├── lightbox-create-edit
+│   │   │   │   │   ├── lb-create-edit-issue.jade
+│   │   │   │   │   ├── lb-create-edit-task.jade
+│   │   │   │   │   ├── lb-create-edit-us.jade
+│   │   │   │   │   └── lb-create-edit.jade
+│   │   │   │   ├── lightbox-due-date.jade
+│   │   │   │   ├── lightbox-leave-project-warning.jade
+│   │   │   │   ├── lightbox-relate-to-epic.jade
+│   │   │   │   └── lightbox-request-ownership.jade
+│   │   │   ├── lightbox-feedback.jade
+│   │   │   ├── popover
+│   │   │   │   ├── popover-related-task-status.jade
+│   │   │   │   └── popover-us-status.jade
+│   │   │   ├── tag
+│   │   │   │   ├── lb-tag-line-tags.jade
+│   │   │   │   ├── lb-tag-line.jade
+│   │   │   │   ├── tag-line.jade
+│   │   │   │   └── tags-line-tags.jade
+│   │   │   └── wysiwyg
+│   │   │       └── wysiwyg-markitup-preview.jade
+│   │   ├── contrib
+│   │   │   ├── main.jade
+│   │   │   └── user-settings.jade
+│   │   ├── custom-attributes
+│   │   │   ├── custom-attribute-value-edit.jade
+│   │   │   ├── custom-attribute-value.jade
+│   │   │   └── custom-attributes-values.jade
+│   │   ├── epic
+│   │   │   └── epic-detail.jade
+│   │   ├── error
+│   │   │   ├── error.jade
+│   │   │   ├── not-found.jade
+│   │   │   └── permission-denied.jade
+│   │   ├── includes
+│   │   │   ├── components
+│   │   │   │   ├── addnewissue.jade
+│   │   │   │   ├── addnewtask.jade
+│   │   │   │   ├── addnewus.jade
+│   │   │   │   ├── backlog-row.jade
+│   │   │   │   ├── loading-bar.jade
+│   │   │   │   ├── mainTitle.jade
+│   │   │   │   ├── notification-message.jade
+│   │   │   │   ├── sprint-summary.jade
+│   │   │   │   └── summary.jade
+│   │   │   └── modules
+│   │   │       ├── admin
+│   │   │       │   ├── admin-custom-attributes-extra.jade
+│   │   │       │   ├── admin-custom-attributes-new-extra.jade
+│   │   │       │   ├── admin-custom-attributes.jade
+│   │   │       │   ├── admin-membership-table.jade
+│   │   │       │   ├── admin-submenu-contrib.jade
+│   │   │       │   ├── default-values.jade
+│   │   │       │   ├── project-due-date-status.jade
+│   │   │       │   ├── project-kanban-swimlane-single.jade
+│   │   │       │   ├── project-kanban-swimlanes.jade
+│   │   │       │   ├── project-points.jade
+│   │   │       │   ├── project-status.jade
+│   │   │       │   ├── project-tags.jade
+│   │   │       │   ├── project-types.jade
+│   │   │       │   └── project-us-status.jade
+│   │   │       ├── admin-menu.jade
+│   │   │       ├── admin-submenu-project-profile.jade
+│   │   │       ├── admin-submenu-project-values.jade
+│   │   │       ├── admin-submenu-roles.jade
+│   │   │       ├── admin-submenu-third-parties.jade
+│   │   │       ├── backlog-table.jade
+│   │   │       ├── burndown.jade
+│   │   │       ├── cancel-account-form.jade
+│   │   │       ├── change-email-form.jade
+│   │   │       ├── change-password-from-recovery-form.jade
+│   │   │       ├── forgot-form.jade
+│   │   │       ├── invitation-login-form.jade
+│   │   │       ├── invitation-register-form.jade
+│   │   │       ├── kanban-table.jade
+│   │   │       ├── lightbox-ask-choice.jade
+│   │   │       ├── lightbox-delete-project.jade
+│   │   │       ├── lightbox-generic-ask.jade
+│   │   │       ├── lightbox-generic-delete.jade
+│   │   │       ├── lightbox-generic-error.jade
+│   │   │       ├── lightbox-generic-loading.jade
+│   │   │       ├── lightbox-generic-success.jade
+│   │   │       ├── lightbox-issue-bulk.jade
+│   │   │       ├── lightbox-sprint-add-edit.jade
+│   │   │       ├── lightbox-task-bulk.jade
+│   │   │       ├── lightbox-us-bulk.jade
+│   │   │       ├── loader.jade
+│   │   │       ├── login-form.jade
+│   │   │       ├── register-form.jade
+│   │   │       ├── related-tasks.jade
+│   │   │       ├── search-filter.jade
+│   │   │       ├── search-in.jade
+│   │   │       ├── search-results
+│   │   │       │   ├── empty-search-results.jade
+│   │   │       │   ├── search-result-table-epics.jade
+│   │   │       │   ├── search-result-table-issues.jade
+│   │   │       │   ├── search-result-table-tasks.jade
+│   │   │       │   ├── search-result-table-us.jade
+│   │   │       │   ├── search-result-table-wiki.jade
+│   │   │       │   └── search-result-table.jade
+│   │   │       ├── sprints.jade
+│   │   │       ├── taskboard-table.jade
+│   │   │       ├── team
+│   │   │       │   ├── team-filters.jade
+│   │   │       │   └── team-table.jade
+│   │   │       ├── user-settings
+│   │   │       │   ├── live-notifications-table.jade
+│   │   │       │   ├── mail-notifications-table.jade
+│   │   │       │   └── web-notifications-table.jade
+│   │   │       ├── user-settings-menu.jade
+│   │   │       └── verify-email-form.jade
+│   │   ├── issue
+│   │   │   ├── assign-sprint-to-issue-button.jade
+│   │   │   ├── iocaine-button.jade
+│   │   │   ├── issue-paginator.jade
+│   │   │   ├── issue-priority-button.jade
+│   │   │   ├── issue-severity-button.jade
+│   │   │   ├── issue-status-inline-edition-selection.jade
+│   │   │   ├── issue-type-button.jade
+│   │   │   ├── issues-detail.jade
+│   │   │   └── issues.jade
+│   │   ├── kanban
+│   │   │   └── kanban.jade
+│   │   ├── search
+│   │   │   ├── lightbox-search.jade
+│   │   │   └── search.jade
+│   │   ├── task
+│   │   │   ├── related-task-create-form.jade
+│   │   │   ├── related-task-row-edit.jade
+│   │   │   ├── related-task-row.jade
+│   │   │   └── task-detail.jade
+│   │   ├── taskboard
+│   │   │   ├── taskboard-user.jade
+│   │   │   └── taskboard.jade
+│   │   ├── team
+│   │   │   ├── leave-project.jade
+│   │   │   ├── team-filter.jade
+│   │   │   ├── team-member-current-user.jade
+│   │   │   ├── team-member-stats.jade
+│   │   │   ├── team-members.jade
+│   │   │   └── team.jade
+│   │   ├── us
+│   │   │   ├── us-client-requirement-button.jade
+│   │   │   ├── us-detail.jade
+│   │   │   └── us-team-requirement-button.jade
+│   │   ├── user
+│   │   │   ├── cancel-account.jade
+│   │   │   ├── change-email.jade
+│   │   │   ├── lightbox
+│   │   │   │   └── lightbox-delete-account.jade
+│   │   │   ├── live-notifications.jade
+│   │   │   ├── mail-notifications.jade
+│   │   │   ├── user-change-password.jade
+│   │   │   ├── user-profile.jade
+│   │   │   ├── user-project-settings.jade
+│   │   │   ├── verify-email.jade
+│   │   │   └── web-notifications.jade
+│   │   └── wiki
+│   │       ├── wiki-list.jade
+│   │       ├── wiki-nav.jade
+│   │       ├── wiki-summary.jade
+│   │       └── wiki.jade
+│   ├── styles
+│   │   ├── components
+│   │   │   ├── avatar.scss
+│   │   │   ├── basic-table.scss
+│   │   │   ├── buttons-next.scss
+│   │   │   ├── buttons.scss
+│   │   │   ├── card-placeholder.scss
+│   │   │   ├── check.scss
+│   │   │   ├── created-by.scss
+│   │   │   ├── doomline.scss
+│   │   │   ├── editor-help.scss
+│   │   │   ├── empty.scss
+│   │   │   ├── estimation.scss
+│   │   │   ├── history.scss
+│   │   │   ├── level.scss
+│   │   │   ├── list-items.scss
+│   │   │   ├── loader.scss
+│   │   │   ├── loading-bar.scss
+│   │   │   ├── loading-spinner.scss
+│   │   │   ├── looking-for-people.scss
+│   │   │   ├── notification-message.scss
+│   │   │   ├── paginator.scss
+│   │   │   ├── popover-points.scss
+│   │   │   ├── private.scss
+│   │   │   ├── settings-nav.scss
+│   │   │   ├── summary.scss
+│   │   │   ├── track-btn.scss
+│   │   │   └── user-list.scss
+│   │   ├── core
+│   │   │   ├── animation.scss
+│   │   │   ├── base.scss
+│   │   │   ├── elements.scss
+│   │   │   ├── forms.scss
+│   │   │   └── typography.scss
+│   │   ├── dependencies
+│   │   │   ├── helpers.scss
+│   │   │   ├── mixins
+│   │   │   │   ├── avatar.scss
+│   │   │   │   ├── background.scss
+│   │   │   │   ├── box-arrow.scss
+│   │   │   │   ├── box-shadow.scss
+│   │   │   │   ├── btn-group.scss
+│   │   │   │   ├── centered.scss
+│   │   │   │   ├── create.scss
+│   │   │   │   ├── empty-color.scss
+│   │   │   │   ├── epics-dashboard.scss
+│   │   │   │   ├── import.scss
+│   │   │   │   ├── lightbox.scss
+│   │   │   │   ├── loading-spinner.scss
+│   │   │   │   ├── popover.scss
+│   │   │   │   ├── profile-form.scss
+│   │   │   │   ├── progress.scss
+│   │   │   │   ├── project-card.scss
+│   │   │   │   ├── radio-group.scss
+│   │   │   │   ├── sidebar.scss
+│   │   │   │   ├── slide.scss
+│   │   │   │   ├── svg.scss
+│   │   │   │   ├── tooltip.scss
+│   │   │   │   ├── track-buttons.scss
+│   │   │   │   └── typography.scss
+│   │   │   ├── reset.scss
+│   │   │   └── responsive.scss
+│   │   ├── extras
+│   │   │   └── dependencies.scss
+│   │   ├── layout
+│   │   │   ├── admin-memberships.scss
+│   │   │   ├── admin-project-tags.scss
+│   │   │   ├── admin-project-values.scss
+│   │   │   ├── auth.scss
+│   │   │   ├── backlog.scss
+│   │   │   ├── invitation.scss
+│   │   │   ├── issues.scss
+│   │   │   ├── kanban.scss
+│   │   │   ├── not-found.scss
+│   │   │   ├── rtl.scss
+│   │   │   ├── taskboard.scss
+│   │   │   ├── team.scss
+│   │   │   ├── ticket-detail.scss
+│   │   │   ├── wiki-edit.scss
+│   │   │   └── wiki.scss
+│   │   ├── modules
+│   │   │   ├── admin
+│   │   │   │   ├── admin-common.scss
+│   │   │   │   ├── admin-custom-attributes.scss
+│   │   │   │   ├── admin-functionalities.scss
+│   │   │   │   ├── admin-membership-table.scss
+│   │   │   │   ├── admin-menu.scss
+│   │   │   │   ├── admin-project-export.scss
+│   │   │   │   ├── admin-project-profile.scss
+│   │   │   │   ├── admin-roles.scss
+│   │   │   │   ├── admin-submenu-roles.scss
+│   │   │   │   ├── admin-submenu.scss
+│   │   │   │   ├── admin-third-parties-webhooks.scss
+│   │   │   │   ├── contrib.scss
+│   │   │   │   ├── default-values.scss
+│   │   │   │   ├── project-csv.scss
+│   │   │   │   ├── project-values.scss
+│   │   │   │   └── third-parties.scss
+│   │   │   ├── auth
+│   │   │   │   ├── cancel-account.scss
+│   │   │   │   ├── change-email-form.scss
+│   │   │   │   ├── change-password-from-recovery.scss
+│   │   │   │   ├── forgot-form.scss
+│   │   │   │   ├── login-form.scss
+│   │   │   │   └── register-form.scss
+│   │   │   ├── backlog
+│   │   │   │   ├── backlog-table.scss
+│   │   │   │   ├── burndown.scss
+│   │   │   │   ├── sprints.scss
+│   │   │   │   └── taskboard-table.scss
+│   │   │   ├── common
+│   │   │   │   ├── category-config.scss
+│   │   │   │   ├── colors-table.scss
+│   │   │   │   ├── contrib-plugins.scss
+│   │   │   │   ├── custom-fields.scss
+│   │   │   │   ├── external-reference.scss
+│   │   │   │   ├── lightbox.scss
+│   │   │   │   ├── nav.scss
+│   │   │   │   ├── popover.scss
+│   │   │   │   ├── related-tasks.scss
+│   │   │   │   └── ticket-data.scss
+│   │   │   ├── epics
+│   │   │   │   └── epic-detail.scss
+│   │   │   ├── help
+│   │   │   │   ├── joyride.scss
+│   │   │   │   └── lightbox-generic-notion.scss
+│   │   │   ├── home-project.scss
+│   │   │   ├── kanban
+│   │   │   │   └── kanban-table.scss
+│   │   │   ├── search
+│   │   │   │   ├── search-filter.scss
+│   │   │   │   ├── search-in.scss
+│   │   │   │   └── search-result-table.scss
+│   │   │   ├── team
+│   │   │   │   ├── team-filters.scss
+│   │   │   │   └── team-table.scss
+│   │   │   ├── user-settings
+│   │   │   │   ├── mail-notifications-table.scss
+│   │   │   │   ├── project-settings-table.scss
+│   │   │   │   ├── user-change-password.scss
+│   │   │   │   └── user-profile.scss
+│   │   │   └── wiki
+│   │   │       ├── wiki-nav.scss
+│   │   │       ├── wiki-pages-table.scss
+│   │   │       └── wiki-summary.scss
+│   │   ├── shame
+│   │   │   └── shame.scss
+│   │   └── vendor
+│   │       ├── jquery.textcomplete.css
+│   │       ├── normalize.css
+│   │       └── pikaday.css
+│   ├── svg
+│   │   ├── editor.svg
+│   │   ├── icons
+│   │   │   ├── block-user.svg
+│   │   │   ├── multi-block-project.svg
+│   │   │   ├── project-limit.svg
+│   │   │   └── team-question.svg
+│   │   ├── logo-color.svg
+│   │   ├── logo-moustache.svg
+│   │   ├── logo-nav.svg
+│   │   ├── logo.svg
+│   │   ├── pattern.svg
+│   │   ├── spinner-circle.svg
+│   │   ├── spinner.svg
+│   │   └── sprite.svg
+│   └── themes
+│       ├── Digiplanner
+│       │   ├── custom.scss
+│       │   └── variables.scss
+│       └── taiga
+│           ├── custom.scss
+│           └── variables.scss
+├── app-loader
+│   ├── app-loader.coffee
+│   └── bootstrap.coffee
+├── arbol.txt
+├── coffeelint.json
+├── conf
+│   └── conf.example.json
+├── conf.e2e.js
+├── csslintrc.json
+├── docker
+│   ├── Dockerfile
+│   ├── conf.json.template
+│   ├── config_env_subst.sh
+│   └── default.conf
+├── e2e
+│   ├── README.md
+│   ├── capabilities.js
+│   ├── gallery
+│   │   ├── gallery-front.js
+│   │   ├── gallery.css
+│   │   ├── gallery.jade
+│   │   └── index.js
+│   ├── helpers
+│   │   ├── admin-attributes-helper.js
+│   │   ├── admin-integrations.js
+│   │   ├── admin-memberships.js
+│   │   ├── admin-permissions.js
+│   │   ├── backlog-helper.js
+│   │   ├── common-helper.js
+│   │   ├── create-project-helper.js
+│   │   ├── custom-fields-helper.js
+│   │   ├── detail-helper.js
+│   │   ├── discover-helper.js
+│   │   ├── epic-detail-helper.js
+│   │   ├── epics-dashboard-helper.js
+│   │   ├── filters-helper.js
+│   │   ├── index.js
+│   │   ├── issues-helper.js
+│   │   ├── kanban-helper.js
+│   │   ├── project-detail-helper.js
+│   │   ├── task-detail-helper.js
+│   │   ├── taskboard-helper.js
+│   │   ├── team-helper.js
+│   │   ├── us-detail-helper.js
+│   │   ├── user-profile-helper.js
+│   │   └── wiki-helper.js
+│   ├── screenshots
+│   │   ├── chrome
+│   │   ├── firefox
+│   │   ├── ie
+│   │   └── safari
+│   ├── shared
+│   │   ├── detail.js
+│   │   ├── filters.js
+│   │   └── wysiwyg.js
+│   ├── suites
+│   │   ├── admin
+│   │   │   ├── attributes
+│   │   │   │   ├── custom-fields.e2e.js
+│   │   │   │   ├── points.e2e.js
+│   │   │   │   ├── priorities.e2e.js
+│   │   │   │   ├── severities.e2e.js
+│   │   │   │   ├── status.e2e.js
+│   │   │   │   ├── tags.e2e.js
+│   │   │   │   └── types.e2e.js
+│   │   │   ├── integrations
+│   │   │   │   ├── bitbucket.e2e.js
+│   │   │   │   ├── github.e2e.js
+│   │   │   │   ├── gitlab.e2e.js
+│   │   │   │   └── webhooks.e2e.js
+│   │   │   ├── members.e2e.js
+│   │   │   ├── permissions.e2e.js
+│   │   │   └── project
+│   │   │       ├── default-values.e2e.js
+│   │   │       ├── modules.e2e.js
+│   │   │       ├── project-detail.e2e.js
+│   │   │       └── reports.e2e.js
+│   │   ├── auth
+│   │   │   └── auth.e2e.js
+│   │   ├── backlog.e2e.js
+│   │   ├── create-project
+│   │   │   └── duplicate.e2e.js
+│   │   ├── discover
+│   │   │   ├── discover-home.e2e.js
+│   │   │   └── discover-search.e2e.js
+│   │   ├── epics
+│   │   │   ├── epic-dashboard.e2e.js
+│   │   │   └── epic-detail.e2e.js
+│   │   ├── home.e2e.js
+│   │   ├── issues
+│   │   │   ├── issue-detail.e2e.js
+│   │   │   └── issues.e2e.js
+│   │   ├── kanban.e2e.js
+│   │   ├── project-home.e2e.js
+│   │   ├── public
+│   │   │   └── public.e2e.js
+│   │   ├── search.e2e.js
+│   │   ├── tasks
+│   │   │   ├── task-detail.e2e.js
+│   │   │   └── taskboard.e2e.js
+│   │   ├── team.e2e.js
+│   │   ├── transfer-project.e2e.js
+│   │   ├── user-profile
+│   │   │   ├── change-password.e2e.js
+│   │   │   ├── edit-user-profile.e2e.js
+│   │   │   ├── email-notification.e2e.js
+│   │   │   ├── feedback.e2e.js
+│   │   │   ├── user-profile-activity.e2e.js
+│   │   │   ├── user-profile-contacts.e2e.js
+│   │   │   ├── user-profile-likes.e2e.js
+│   │   │   ├── user-profile-projects.e2e.js
+│   │   │   ├── user-profile-votes.e2e.js
+│   │   │   └── user-profile-watched.e2e.js
+│   │   ├── user-stories
+│   │   │   └── user-story-detail.e2e.js
+│   │   └── wiki.e2e.js
+│   ├── taiga_back_cli.py
+│   ├── upload-file-test.txt
+│   ├── upload-image-test.png
+│   └── utils
+│       ├── common.js
+│       ├── index.js
+│       ├── lightbox.js
+│       ├── nav.js
+│       ├── notifications.js
+│       └── popover.js
+├── elements.js
+├── emojis
+│   ├── 0023-20e3.png
+│   └── emojis-data.json
+├── extras
+│   └── humans.txt
+├── gulp-utils.js
+├── gulpfile.js
+├── karma.app.conf.js
+├── karma.conf.js
+├── locales.js
+├── package-lock.json
+├── package.json
+├── run-e2e.js
+├── scripts
+│   ├── add_license.py
+│   ├── generate-packed-plugins.py
+│   ├── manage_translations.py
+│   ├── search-for-similar-strings.py
+│   └── verify-locale-keys-usage.py
+└── test-utils.js
+
+274 directories, 2856 files
